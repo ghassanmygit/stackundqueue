@@ -1,3 +1,5 @@
+from collections import deque
+
 data_paket = [
     {"resi": "PKT001", "nama": "Andi Galon",
      "tujuan": "Jakarta"},
@@ -9,16 +11,11 @@ data_paket = [
      "tujuan": "Yogyakarta"}
 ]
 
-kapasitas = 3
-queue = []
+queue = deque()
 
-# Memasukkan paket ke Queue 
 for paket in data_paket:
-    if len(queue) == kapasitas:
-        print("Queue Penuh! Gagal enqueue:", paket["resi"])
-    else:
-        queue.append(paket)
-        print("Paket berhasil ditambahkan:", paket["resi"])
+    queue.append(paket)
+    print("Paket berhasil ditambahkan:", paket["resi"])
 
 print("\n=== ISI QUEUE ===")
 for paket in queue:
@@ -31,7 +28,7 @@ if queue:
 
 print("\n=== DEQUEUE ===")
 if queue:
-    paket = queue.pop(0)
+    paket = queue.popleft()
     print("Paket dikeluarkan:", paket["resi"])
 
 print("\n=== QUEUE SETELAH DEQUEUE ===")
