@@ -32,15 +32,11 @@ def push(paket):
     stack[top] = paket
     print("Paket masuk:", paket["resi"])
 
-
-
 def peek():
     if top == -1:
         print("Stack kosong!")
     else:
         print("Paket teratas:", stack[top]["resi"])
-
-
 
 def pop():
     global top
