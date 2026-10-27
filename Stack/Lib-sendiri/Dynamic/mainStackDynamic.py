@@ -8,7 +8,19 @@ data_paket = [
     {"resi": "PKT003", "nama": "Cecep Alat Tulis",
      "tujuan": "Surabaya"},
     {"resi": "PKT004", "nama": "Dodi Kompor Gas",
-     "tujuan": "Yogyakarta"}
+     "tujuan": "Yogyakarta"},
+    {"resi": "PKT005", "nama": "Eko Agen BRI",
+     "tujuan": "Semarang"},
+    {"resi": "PKT006", "nama": "Fajar Bengkel",
+     "tujuan": "Malang"},
+    {"resi": "PKT007", "nama": "Gilang Las",
+     "tujuan": "Tangerang"},
+    {"resi": "PKT008", "nama": "Surya Toko Bangunan",
+     "tujuan": "Bekasi"},
+    {"resi": "PKT009", "nama": "Indra Sedot WC",
+     "tujuan": "Depok"},
+    {"resi": "PKT010", "nama": "Joko Solo King",
+     "tujuan": "Bogor"}
 ]
 
 stack = StackPaket()
